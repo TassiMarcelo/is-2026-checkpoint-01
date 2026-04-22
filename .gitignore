@@ -1,0 +1,14 @@
+# Variables de entorno - NUNCA subir a git
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
