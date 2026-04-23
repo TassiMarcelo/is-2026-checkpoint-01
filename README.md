@@ -18,11 +18,11 @@ Muestra una tabla con los integrantes del equipo, la feature que implementó cad
 
 | Nombre | Legajo | Feature | Servicio |
 |---|---|---|---|
-| Marcelo Tassi | 29680 | Feature 01 — Coordinación | docker-compose, README |
-| Nombre Apellido | XXXXX | Feature 02 — Frontend | frontend |
-| Nombre Apellido | XXXXX | Feature 03 — Backend | backend |
-| Nombre Apellido | XXXXX | Feature 04 — Base de datos | database |
-| Nombre Apellido | XXXXX | Feature 05 — Portainer | portainer |
+| Tassi	 Marcelo | 29680 | Feature 01 — Coordinación | docker-compose, README |
+| Delozano	Matias | 27978 | Feature 02 — Frontend | frontend |
+| Di Bella	Abel | 25619 | Feature 03 — Backend | backend |
+| Llontop	Alejandro | 31890 | Feature 04 — Base de datos | database |
+| Lafalce	Mateo | 33217 | Feature 05 — Portainer | portainer |
 
 ---
 
@@ -74,6 +74,7 @@ docker compose ps
 
 ## Estructura del repositorio
 
+```
 is-2026-checkpoint-01/
 ├── docker-compose.yml
 ├── .env.example
@@ -83,3 +84,4 @@ is-2026-checkpoint-01/
 ├── backend/
 ├── database/
 └── portainer/
+```
