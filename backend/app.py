@@ -1,10 +1,11 @@
-
 from flask import Flask, jsonify
+from flask_cors import CORS
 import psycopg2
 import os
 
 # Inicialización de la aplicación Flask
 app = Flask(__name__)
+CORS(app)
 
 
 
@@ -30,7 +31,9 @@ def health():
 #Obtencion de la lista de integrantes 
 @app.route("/api/team")
 def team():
-    
+    conn = None
+    cursor = None
+
     try:
         
         conn = get_connection()
@@ -53,16 +56,19 @@ def team():
                 "estado": row[6]
             })
 
-        # Cierre de conexión
-        cursor.close()
-        conn.close()
-
         return jsonify(members)
 
     except Exception as e:
         # Manejo de errores
         return jsonify({"error": str(e)}), 500
+    
 
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+            
 
 @app.route("/api/info")
 def info():
