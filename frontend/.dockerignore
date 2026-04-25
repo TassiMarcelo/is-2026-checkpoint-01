@@ -1,0 +1,11 @@
+# Ignorar archivos y carpetas comunes
+.env
+__pycache__/
+.git/
+.gitignore
+node_modules/
+dist/
+Dockerfile
+docker-compose.yml
+*.log
+npm-debug.log
