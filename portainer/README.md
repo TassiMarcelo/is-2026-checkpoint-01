@@ -31,3 +31,10 @@ Puntos clave:
 ## Capturas
 
 Las capturas de evidencia se encuentran en `screenshots/` y se referencian desde el README principal.
+
+- `01-containers.png` — listado de contenedores del stack
+- `02-stack.png` — vista del stack `is-2026-checkpoint-01`
+- `03-logs.png` — logs en tiempo real de un servicio
+- `04-stats.png` — stats de uso de CPU y memoria por contenedor
+
+![Stats](screenshots/04-stats.png)

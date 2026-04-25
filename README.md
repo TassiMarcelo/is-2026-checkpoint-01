@@ -93,6 +93,7 @@ Más detalles en [`portainer/README.md`](portainer/README.md).
 | Listado de contenedores | ![Containers](portainer/screenshots/01-containers.png) |
 | Stack del proyecto | ![Stack](portainer/screenshots/02-stack.png) |
 | Logs de un servicio | ![Logs](portainer/screenshots/03-logs.png) |
+| Stats de uso (CPU / memoria) | ![Stats](portainer/screenshots/04-stats.png) |
 
 ---
 
