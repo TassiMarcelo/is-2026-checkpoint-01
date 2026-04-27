@@ -66,9 +66,34 @@ docker compose ps
 
 ---
 
-## Capturas de Portainer
+## Portainer — Panel de monitoreo
 
-*(El integrante de Feature 05 agrega las capturas acá)*
+Portainer permite ver y administrar los contenedores del stack desde el navegador.
+
+### Acceso
+
+1. Levantar el stack con `docker compose up -d --build`.
+2. Abrir <http://localhost:9000>.
+3. **Primer ingreso**: Portainer solicita crear un usuario administrador (mínimo 12 caracteres). Esta configuración persiste en el volumen `portainer_data`.
+4. Elegir "Get Started" para usar el entorno Docker local.
+
+### Qué se ve
+
+- Contenedores corriendo: `frontend`, `backend`, `postgres_db`, `portainer`.
+- Stack agrupado bajo el proyecto `is-2026-checkpoint-01`.
+- Logs, stats de CPU/memoria y healthchecks por contenedor.
+- Volúmenes (`db_data`, `portainer_data`) y red `teamboard-net`.
+
+Más detalles en [`portainer/README.md`](portainer/README.md).
+
+### Capturas
+
+| | |
+|---|---|
+| Listado de contenedores | ![Containers](portainer/screenshots/01-containers.png) |
+| Stack del proyecto | ![Stack](portainer/screenshots/02-stack.png) |
+| Logs de un servicio | ![Logs](portainer/screenshots/03-logs.png) |
+| Stats de uso (CPU / memoria) | ![Stats](portainer/screenshots/04-stats.png) |
 
 ---
 
